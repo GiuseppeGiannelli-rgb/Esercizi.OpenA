@@ -5,13 +5,21 @@ description = ""
 authors = [
     {name = "Giuseppe_Giannelli",email = "peppegiannelli@hotmail.com"}
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.13,<3.14"
 dependencies = [
     "openai (>=3.19.0,<4.0.0)",
-    "python-dotenv (>=1.2.3,<2.0.0)"
+    "python-dotenv (>=1.2.3,<2.0.0)",
+    "ollama (>=0.6.2,<0.7.0)",
+    "chainlit (>=2.12.0,<3.0.0)",
+    "langchain-ollama (>=1.1.0,<2.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.3.0,<8.0.0)"
+]
