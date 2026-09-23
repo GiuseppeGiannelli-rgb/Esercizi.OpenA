@@ -1,0 +1,17 @@
+[project]
+name = "esercizi-openai"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Giuseppe_Giannelli",email = "peppegiannelli@hotmail.com"}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai (>=3.19.0,<4.0.0)",
+    "python-dotenv (>=1.2.3,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
